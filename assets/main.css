@@ -35,6 +35,7 @@ body{
     line-height:1.5em;
     margin: 60px auto;
     width: 1000px;
+    max-width: 95%;
 }
 
 a{color: #b8860b; text-decoration:none;}
@@ -47,9 +48,9 @@ h1{font-size:2.67em;}
 h2{font-size:2.00em;}
 h3{font-size:1.67em;}
 h4{font-size:1.33em;}
-p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
+p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; max-width: 95%; text-align:left;}
 li a, p a {text-decoration:underline; text-decoration-color:#b8860b;}
-ul{list-style:none; margin:24px auto 24px auto; padding:0px; width:800px; text-align:left;}
+ul{list-style:none; margin:24px auto 24px auto; padding:0px; width:800px; max-width: 95%; text-align:left;}
 ul li{list-style:none; margin:0px auto 0px auto; padding:0px; text-align:left;}
 
 /* Content lists should show bullets */
@@ -75,6 +76,7 @@ sub{
 }
 table{
     width: 1000px;
+    max-width: 95%;
     margin: 12px auto 24px auto;
     float: center;
     /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
@@ -88,7 +90,7 @@ th,td{
 
 /* Website Banner */
 .banner {position: relative; font-family:'Roboto Slab',serif;}
-.top-left {font-size:5.33em; color: #505050; background: #fafafa; text-align: center; width: 1000px; height: 67px; position: absolute; padding: 36px 0 0 0; top: 0px;}
+.top-left {font-size:5.33em; color: #505050; background: #fafafa; text-align: center; width: 1000px; max-width: 95%; height: 67px; position: absolute; padding: 36px 0 0 0; top: 0px;}
 .bottom-right {font-size:2.33em; color: #fafafa; line-height: 1.5em; width: auto; height: 100px; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
 
 /* Conference Title Logo */
@@ -97,11 +99,11 @@ th,td{
 .year{color: #505050; font-size:0.67em; font-weight: lighter;}
 
 /* Navigation Links (Home, Registration, etc) */
-table.navigation{width:800px;}
+table.navigation{width:800px; max-width: 95%;}
 td.navigation{font-size:1.67em; white-space:nowrap; width:20%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
 
 /* Sponsor Images */
-table.sponsors{width:800px;}
+table.sponsors{width:800px; max-width: 95%;}
 td.sponsor{white-space:nowrap; width:33%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
 td.sponsor img{width: 100%}
 
@@ -121,7 +123,7 @@ iframe.directions{display:block; margin:1em auto 2em auto; width:800px; height:4
 img.center{display:block; width:67%; margin:1em auto 2em auto;}
 
 /* Flyer Images */
-table.flyers{width:800px;}
+table.flyers{width:800px; max-width: 95%;}
 td.flyer{white-space:nowrap; width:50%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
 td.sponsor img{width: 100%}
 
@@ -129,12 +131,72 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
 
 /* My hacky way of making the site mobile-friendly */
 @media only screen and (max-width: 1100px) {
+    body{
+        margin: 30px auto;
+        width: 95%;
+    }
     h2{font-size:3.00em;}
-    p{font-size:1.5em; line-height:1.5em;}
-    ul{font-size:1.5em; line-height:1.5em;}
+    p{font-size:1.5em; line-height:1.5em; width: 95%;}
+    ul{font-size:1.5em; line-height:1.5em; width: 95%;}
     th,td,tr{font-size:1.5em; line-height:1.5em;}
     td.date{font-size:1em; padding-top:0.5em;}
-    td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
+    td.navigation{font-size:1.5em; padding:0px 10px 0px 10px; white-space: normal;}
     table.footer{font-size:0.33em;}
+    .top-left{
+        font-size:3em;
+        width: 95%;
+        padding: 20px 0 0 0;
+    }
+    .bottom-right{
+        font-size:1.5em;
+        padding: 10px 15px 15px 0px;
+    }
+    table.navigation{
+        width: 95%;
+    }
+    table.sponsors, table.flyers{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        margin: 15px auto;
+        width: 98%;
+    }
+    h2{font-size:2.5em;}
+    p{font-size:1.2em; line-height:1.4em; width: 98%;}
+    ul{font-size:1.2em; line-height:1.4em; width: 98%;}
+    td.navigation{
+        font-size:1.2em; 
+        padding:10px 5px; 
+        display: block; 
+        width: 100%;
+        text-align: center;
+    }
+    table.navigation tr{
+        display: block;
+    }
+    table.navigation{
+        width: 98%;
+        display: block;
+    }
+    .top-left{
+        font-size:2em;
+        width: 98%;
+        padding: 15px 0 0 0;
+    }
+    .bottom-right{
+        font-size:1.2em;
+        padding: 10px 10px 10px 0px;
+    }
+    iframe.registration{
+        width: 98%;
+        height: 1000px;
+    }
+    iframe.directions{
+        width: 98%;
+        height: 300px;
+    }
 }
 
