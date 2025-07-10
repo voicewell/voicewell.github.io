@@ -29,7 +29,9 @@ function setCurrentPage() {
         document.getElementById('program-link')?.classList.add('current');
     } else if (currentPath.includes('/directions') || currentPage === 'directions') {
         document.getElementById('directions-link')?.classList.add('current');
-    } else if (currentPath.includes('/flyer') || currentPage === 'flyer') {
+    } else if (currentPath.includes('/speakers') || currentPage === 'speakers') {
+        document.getElementById('speakers-link')?.classList.add('current');
+    } else if (currentPath.includes('/contact') || currentPage === 'contact') {
         document.getElementById('flyer-link')?.classList.add('current');
     } else {
         // Default to home page
