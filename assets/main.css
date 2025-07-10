@@ -52,6 +52,8 @@ p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; max-wid
 li a, p a {text-decoration:underline; text-decoration-color:#b8860b;}
 ul{list-style:none; margin:24px auto 24px auto; padding:0px; width:800px; max-width: 95%; text-align:left;}
 ul li{list-style:none; margin:0px auto 0px auto; padding:0px; text-align:left;}
+ol{list-style:decimal; margin:24px auto 24px auto; padding:0px 0px 0px 20px; width:800px; max-width: 95%; text-align:left;}
+ol li{list-style:decimal; margin:0.5em 0; padding:0px; text-align:left;}
 
 /* Content lists should show bullets */
 ul:not(.navigation):not(.sponsors):not(.flyers) {
@@ -138,6 +140,7 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     h2{font-size:3.00em;}
     p{font-size:1.5em; line-height:1.5em; width: 95%;}
     ul{font-size:1.5em; line-height:1.5em; width: 95%;}
+    ol{font-size:1.5em; line-height:1.5em; width: 95%;}
     th,td,tr{font-size:1.5em; line-height:1.5em;}
     td.date{font-size:1em; padding-top:0.5em;}
     td.navigation{font-size:1.5em; padding:0px 10px 0px 10px; white-space: normal;}
@@ -169,6 +172,7 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     h2{font-size:2.5em;}
     p{font-size:1.2em; line-height:1.4em; width: 98%;}
     ul{font-size:1.2em; line-height:1.4em; width: 98%;}
+    ol{font-size:1.2em; line-height:1.4em; width: 98%;}
     td.navigation{
         font-size:1.2em; 
         padding:10px 5px; 
