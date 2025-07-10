@@ -32,7 +32,7 @@ function setCurrentPage() {
     } else if (currentPath.includes('/speakers') || currentPage === 'speakers') {
         document.getElementById('speakers-link')?.classList.add('current');
     } else if (currentPath.includes('/contact') || currentPage === 'contact') {
-        document.getElementById('flyer-link')?.classList.add('current');
+        document.getElementById('contact-link')?.classList.add('current');
     } else {
         // Default to home page
         document.getElementById('home-link')?.classList.add('current');
